@@ -1,21 +1,28 @@
 # Portfolio
-this is my portfolio
-Ich shaffe das!!!!!!!
+**UX:** Grab&Go, Deep Peace, LandRover
+<br> **Product:** Curly, Iceros, Bisitz
+<br> **Coding:** Modrian, Watching
+<br> **About Me:** photo + text
 
 ## To Do List
-- [ ] 19.12.15    **basis coding**
-- [ ] 19.12.21    **Grab & Go App**
-- [ ] 20.01.12    **Grab & Go**
-- [ ] 19.12.10    **layout template**
-- [ ] 20.01.31    **Deep Peace**
-- [ ] 20.02.05    **Watching debug**
-- [ ] 20.02.22    **Modria & Watching**
-- [ ] 20.02.26    **Peiqi's Web conzept & layout**
-- [ ] 20.03.04    **LandRover**
-- [ ] 20.03.14    **Curly**
-- [ ] 20.03.11    **Iceros**
-- [ ] 20.03.18    **Bisitz**
-- [ ] 20.03.21    **Peiqi's Web**
+- [ ] 19.12.15 &nbsp;&nbsp;basis coding
+- [ ] 19.12.21 &nbsp;&nbsp;Grab & Go App
+- [ ] 20.01.12 &nbsp;&nbsp;Grab & Go
+- [ ] 19.12.10 &nbsp;&nbsp;layout template
+- [ ] 20.01.31 &nbsp;&nbsp;Deep Peace
+- [ ] 20.02.05 &nbsp;&nbsp;Watching debug
+- [ ] 20.02.22 &nbsp;&nbsp;Modria & Watching
+- [ ] 20.02.26 &nbsp;&nbsp;Peiqi's Web conzept & layo
+- [ ] 20.03.04 &nbsp;&nbsp;LandRover
+- [ ] 20.03.14 &nbsp;&nbsp;Curly
+- [ ] 20.03.11 &nbsp;&nbsp;Iceros
+- [ ] 20.03.18 &nbsp;&nbsp;Bisitz
+- [ ] 20.03.21 &nbsp;&nbsp;Peiqi's Web
+
+## User Experience
+## Product
+## Coding
+## About Me
 
 
 
