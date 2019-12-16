@@ -12,16 +12,13 @@ var xDirection = 1;
 var yDirection = 1;
 
 
-
-
 function setup() {
     createCanvas(windowWidth, windowHeight);
     
 }
   
 function draw() {
-    background(255);
-    grid();  
+    clear();
     move();  
     eye(x, y, 200);
     // eye(windowWidth/2, windowHeight-100, 125, 5);
@@ -45,28 +42,12 @@ function move(){
 
 }
 
-function grid(){
-    let gap = 18;
-    let maxVertical = floor(windowWidth/gap);
-    let maxHorizontal = floor(windowHeight/gap);
-    stroke(myBlue);
-    strokeWeight(1.2);
-    for(let i=0; i<maxVertical; i++){
-        line(gap*(i+1), 0, gap*(i+1), windowHeight);
-    }
-    for(let i=0; i<maxHorizontal; i++){
-        line(0,gap*(i+1), windowWidth, gap*(i+1));
-    }
-}
-
 function eye(x, y, d) {
     weight=d/25;
     d0=d+weight+10;
     d1=d;
     d2=d/1.6;
-    d3=d/4;
-   
-    
+    d3=d/4;    
 
     r = (d1-d2)/2;
 
