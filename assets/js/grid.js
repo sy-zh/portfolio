@@ -8,8 +8,8 @@ let gap = 18;
 let maxVertical = Math.floor(canvas.width/gap);
 let maxHorizontal = Math.floor(canvas.height/gap);
 
-ctx.strokeStyle = "#006EAB";
-ctx.lineWidth = 1.2;
+ctx.strokeStyle = "rgb(0,110,171)"
+ctx.lineWidth = 1;
 
 for(let i=0; i<maxVertical; i++){
     ctx.moveTo(gap*(i+1), 0);

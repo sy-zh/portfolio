@@ -18,17 +18,20 @@ function setup() {
 }
   
 function draw() {
-    clear();
+    // clear();
+    grid();
     move();  
+    // eye(80, 200, 280);
+    // eye(420, 50, 220);
+    // eye(windowWidth/3, 100, 200);
+    
+    eye(windowWidth-60, 60, 200);
     eye(x, y, 200);
-    // eye(windowWidth/2, windowHeight-100, 125, 5);
-    eye(windowWidth-60, 60, 50);
-    // eye(250, 250, 100, 4);
 
 }
 
 function move(){
-    let speed = 2;
+    let speed = 3;
     x = x + speed * xDirection;
     y = y + speed * yDirection;
 
@@ -44,10 +47,11 @@ function move(){
 
 function eye(x, y, d) {
     weight=d/25;
+    // weight=8;
     d0=d+weight+10;
     d1=d;
-    d2=d/1.6;
-    d3=d/4;    
+    d2=d/2;
+    d3=d/6;    
 
     r = (d1-d2)/2;
 
@@ -65,7 +69,7 @@ function eye(x, y, d) {
 
     noStroke();
     fill(255);
-    circle(0,0,d+weight+10);
+    circle(0,0,d0);
 
     stroke(0);
     strokeWeight(weight);
@@ -73,11 +77,24 @@ function eye(x, y, d) {
     circle(0, 0, d1);
 
     fill(myGreen);
-    circle(r-weight/2, 0, d2);
+    circle(r-1.5*weight, 0, d2);
     
     fill(0);
-    circle(r+((d2-d3)/2)-weight, 0, d3);
+    circle(r+((d2-d3)/2)-3*weight, 0, d3);
     pop();
 }
 
+function grid(){
+    let gap = 18;
+    let maxVertical = floor(windowWidth/gap);
+    let maxHorizontal = floor(windowHeight/gap);
+    stroke(myBlue);
+    strokeWeight(0.8);
+    for(let i=0; i<maxVertical; i++){
+        line(gap*(i+1), 0, gap*(i+1), windowHeight);
+    }
+    for(let i=0; i<maxHorizontal; i++){
+        line(0,gap*(i+1), windowWidth, gap*(i+1));
+    }
+}
 
