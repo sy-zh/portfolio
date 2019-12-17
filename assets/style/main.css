@@ -8,9 +8,15 @@ html, body {
 canvas {
     position: fixed;
     display: block;
-    z-index:-101;
-    
+    z-index:-101;   
 }
+
+#grid{
+  position: fixed;
+  display: block;
+  z-index:-102;
+}
+
 
 .container{
   position: fixed;
@@ -23,23 +29,31 @@ canvas {
   color: rgb(138,196,196);
   text-align: right;
   line-height: 180%;
-  font-size: 3.5vh;
+  font-size: 2em;
   font-weight: 700;
   text-shadow: -3px -3px black;
   
 }
+
 .menu{
-  background-color: white;
   color: rgb(0,110,171);
   text-align: right;
   font-weight: 500;
 }
+
+.menu span {
+  border-radius: 20px;
+  background-color: white;
+}
+
 a{
   text-decoration: none;
   color: inherit;
+  
 }
 
 a:hover {
   text-decoration: line-through;
   color: rgb(228,85,83);
+  font-weight: 700;
 }

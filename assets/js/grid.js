@@ -11,6 +11,9 @@ let maxHorizontal = Math.floor(canvas.height/gap);
 ctx.strokeStyle = "rgb(0,110,171)"
 ctx.lineWidth = 1;
 
+// to make the lineWidth thinner
+ctx.translate(0.5, 0.5)
+
 for(let i=0; i<maxVertical; i++){
     ctx.moveTo(gap*(i+1), 0);
     ctx.lineTo(gap*(i+1), canvas.height);
