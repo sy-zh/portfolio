@@ -17,12 +17,10 @@ canvas {
   z-index:-102;
 }
 
-
 .container{
   position: fixed;
   bottom: 50px;
   right: 50px;
-  
 }
 
 .title{
@@ -32,7 +30,6 @@ canvas {
   font-size: 2em;
   font-weight: 700;
   text-shadow: -3px -3px black;
-  
 }
 
 .menu{
@@ -49,7 +46,6 @@ canvas {
 a{
   text-decoration: none;
   color: inherit;
-  
 }
 
 a:hover {
