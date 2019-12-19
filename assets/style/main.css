@@ -5,6 +5,28 @@ html, body {
   margin: 0;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background-color: rgb(138,196,196); */
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(138,196,196); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:rgb(228,85,83);
+}
+
 canvas {
     position: fixed;
     display: block;
@@ -17,30 +39,47 @@ canvas {
   z-index:-102;
 }
 
-.container{
+.navigation{
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  top: 30px;
+  right: 60px;
+  color: rgb(0,110,171);
+  text-align: right;
+  font-weight: 500;
+  line-height: 200%;
+}
+
+.navigation span {
+  border-radius: 20px;
+  background-color: white;
 }
 
 .title{
   color: rgb(138,196,196);
   text-align: right;
-  line-height: 180%;
+  line-height: 240%;
   font-size: 2em;
   font-weight: 700;
   text-shadow: -3px -3px black;
 }
 
-.menu{
-  color: rgb(0,110,171);
-  text-align: right;
-  font-weight: 500;
+.title span{
+  color: rgb(228,85,83);
+  font-weight: 700;
+
 }
 
-.menu span {
-  border-radius: 20px;
-  background-color: white;
+.container{
+  display: grid;
+  overflow: auto;
+  /* border: 1px solid black; */
+  height: 80%;
+  width: 80%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding-right:40px;
+  align-items: flex-end;
 }
 
 a{
@@ -53,3 +92,49 @@ a:hover {
   color: rgb(228,85,83);
   font-weight: 700;
 }
+
+@media  only screen and (max-width: 800px) {
+  .title{
+    font-size: 1.5em;
+  }
+  .container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding-right:20px;
+  }
+  .navigation{
+    top: 20px;
+    right: 30px;
+  }
+  
+  .navigation span {
+    border-radius: 20px;
+    background-color: white;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .title{
+    font-size: 1em;
+  }
+  .container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding-right:20px;
+  }
+  .navigation{
+    top: 20px;
+    right: 30px;
+  }
+  
+  .navigation span {
+    border-radius: 20px;
+    background-color: white;
+  }
+
+}
+
+

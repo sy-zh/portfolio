@@ -19,8 +19,13 @@ function setup() {
 function draw() {
     clear(); // to make background transparent
     move();  
-    eye(windowWidth-windowWidth/40, windowWidth/20, windowWidth/5);
-    eye(windowWidth/40, windowWidth/20, windowWidth/5);
+    // eye(windowWidth-windowWidth/40, windowWidth/20, windowWidth/5);
+    if(windowWidth>=windowHeight){
+        eye(windowWidth/40, windowWidth/20, windowWidth/5);
+    } else{
+        eye(windowHeight/40, windowHeight/20, windowHeight/4);
+    }
+    
     // eye(x, y, 200);
 }
 
