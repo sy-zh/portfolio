@@ -6,7 +6,7 @@
 
 ## To Do List
 - [ ] 19.12.15 &nbsp;&nbsp;basis coding
-- [ ] 19.12.21 &nbsp;&nbsp;Grab & Go App
+- [ ] 19.12.15 &nbsp;&nbsp;将menu改成button 加上js
 - [ ] 20.01.12 &nbsp;&nbsp;Grab & Go
 - [ ] 19.12.10 &nbsp;&nbsp;layout template
 - [ ] 20.01.31 &nbsp;&nbsp;Deep Peace

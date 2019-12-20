@@ -46,15 +46,17 @@ canvas {
   position: fixed;
   top: 40px;
   right: 70px;
-  color: rgb(0,110,171);
   text-align: right;
   font-weight: 500;
   line-height: 200%;
 }
 
-.navigation span {
+.navigation button {
   border-radius: 20px;
+  border: none;
   background-color: white;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(0,110,171);
 }
 
 .title{
@@ -83,8 +85,6 @@ canvas {
   padding-right:40px;
   align-items: flex-end;
 }
-
-
 
 a{
   text-decoration: none;
