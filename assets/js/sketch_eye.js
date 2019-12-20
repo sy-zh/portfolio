@@ -25,7 +25,6 @@ function draw() {
     } else{
         eye(windowHeight/40, windowHeight/20, windowHeight/4);
     }
-    
     // eye(x, y, 200);
 }
 
@@ -61,6 +60,16 @@ function eye(x, y, d) {
 
     x = x + cos(angle) * r;
     y = y + sin(angle) * r;
+
+    if (
+        mouseX >= x &&
+        mouseX <= x + d/2 &&
+        mouseY >= y &&
+        mouseY <= y + d/2
+      ) {
+        x += random(-7, 7);
+        y += random(-7, 7);
+    }
 
     push();
     translate(x, y);

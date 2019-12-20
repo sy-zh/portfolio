@@ -20,16 +20,21 @@ function draw() {
     clear(); // to make background transparent
     move();  
 
-    if(windowWidth>=windowHeight){
-        eye(x, y, windowWidth/10);
-    } else{
-        eye(x, y, windowHeight/8);
-    }
+    // if(windowWidth>=windowHeight){
+    //     eye(x, y, windowWidth/5);
+    // } else{
+    //     eye(x, y, windowHeight/4);
+    // }
 
+    if(windowWidth>=windowHeight){
+        eye(windowWidth/20, windowWidth/30, windowWidth/30);
+    } else{
+        eye(windowHeight/20, windowHeight/30, windowHeight/24);
+    }
 }
 
 function move(){
-    let speed = 2;
+    let speed = 3;
     x = x + speed * xDirection;
     y = y + speed * yDirection;
 
@@ -37,10 +42,9 @@ function move(){
         xDirection *= -1;
     }
     
-    if(y > (windowHeight*0.2-70) || y <= 0) {
+    if(y > (windowHeight) || y <= 0) {
         yDirection *= -1;
     }
-
 }
 
 function eye(x, y, d) {
@@ -60,6 +64,16 @@ function eye(x, y, d) {
 
     x = x + cos(angle) * r;
     y = y + sin(angle) * r;
+
+    if (
+        mouseX >= x &&
+        mouseX <= x + d/2 &&
+        mouseY >= y &&
+        mouseY <= y + d/2
+      ) {
+        x += random(-3, 3);
+        y += random(-3, 3);
+    }
 
     push();
     translate(x, y);
