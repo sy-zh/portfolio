@@ -30,6 +30,10 @@ img {
     border-radius: 18px;
 }
 
+#back{
+    color: rgb(228,85,83);
+}
+
 @media only screen and (min-width: 2000px) {
     .imgContainer{
         border: 8px solid rgb(0,110,171);

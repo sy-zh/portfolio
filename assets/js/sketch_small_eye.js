@@ -18,19 +18,18 @@ function setup() {
   
 function draw() {
     clear(); // to make background transparent
-    // move();  
-    // eye(windowWidth-windowWidth/40, windowWidth/20, windowWidth/5);
+    move();  
+
     if(windowWidth>=windowHeight){
-        eye(windowWidth/40, windowWidth/20, windowWidth/5);
+        eye(x, y, windowWidth/10);
     } else{
-        eye(windowHeight/40, windowHeight/20, windowHeight/4);
+        eye(x, y, windowHeight/8);
     }
-    
-    // eye(x, y, 200);
+
 }
 
 function move(){
-    let speed = 3;
+    let speed = 2;
     x = x + speed * xDirection;
     y = y + speed * yDirection;
 
@@ -38,7 +37,7 @@ function move(){
         xDirection *= -1;
     }
     
-    if(y > windowHeight || y <= 0) {
+    if(y > (windowHeight*0.2-70) || y <= 0) {
         yDirection *= -1;
     }
 

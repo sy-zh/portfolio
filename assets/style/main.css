@@ -39,7 +39,7 @@ canvas {
 #grid{
   position: fixed;
   display: block;
-  z-index:-102;
+  z-index:-103;
 }
 
 .navigation{
@@ -69,7 +69,6 @@ canvas {
 .title span{
   color: rgb(228,85,83);
   font-weight: 700;
-
 }
 
 .container{
