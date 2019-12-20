@@ -7,24 +7,27 @@ html, body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 16px;
+  border-radius: 8px;
+  background:rgb(228,85,83);
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  /* background-color: rgb(138,196,196); */
-  border-radius: 5px;
+  border-radius: 8px;
+  border: 3px solid black;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  border: 3px solid black;
   background: rgb(138,196,196); 
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:rgb(228,85,83);
+  background:rgb(108,166,166); 
 }
 
 canvas {
@@ -41,8 +44,8 @@ canvas {
 
 .navigation{
   position: fixed;
-  top: 30px;
-  right: 60px;
+  top: 40px;
+  right: 70px;
   color: rgb(0,110,171);
   text-align: right;
   font-weight: 500;
@@ -76,11 +79,13 @@ canvas {
   height: 80%;
   width: 80%;
   position: fixed;
-  bottom: 50px;
+  bottom: 30px;
   right: 50px;
   padding-right:40px;
   align-items: flex-end;
 }
+
+
 
 a{
   text-decoration: none;
@@ -93,48 +98,86 @@ a:hover {
   font-weight: 700;
 }
 
+@media only screen and (min-width: 2000px) {
+  .title{
+    font-size: 2.5em;
+    text-shadow: -4px -4px black;
+  }
+
+  .container{
+    bottom: 50px;
+    right: 70px;
+  }
+
+  .navigation{
+    top: 60px;
+    right: 90px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 24px;
+    border-radius: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 5px solid black;
+    border-radius: 12px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    border: 5px solid black;
+    border-radius: 12px;
+  }
+}
+
 @media  only screen and (max-width: 800px) {
   .title{
     font-size: 1.5em;
+    text-shadow: -2px -2px black;
   }
+
   .container{
-    position: fixed;
     bottom: 20px;
     right: 20px;
     padding-right:20px;
   }
+
   .navigation{
     top: 20px;
     right: 30px;
   }
-  
-  .navigation span {
-    border-radius: 20px;
-    background-color: white;
-  }
+
 }
 
 
 @media only screen and (max-width: 480px) {
   .title{
-    font-size: 1em;
-  }
-  .container{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding-right:20px;
-  }
-  .navigation{
-    top: 20px;
-    right: 30px;
-  }
-  
-  .navigation span {
-    border-radius: 20px;
-    background-color: white;
+    font-size: 0.9em;
+    text-shadow: -1.5px -1.5px black;
   }
 
+  .container{
+    bottom: 10px;
+    right: 10px;
+    padding-right:20px;
+  }
+
+  .navigation{
+    top: 15px;
+    right: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 2px solid black;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    border: 2px solid black;
+  }
 }
 
 
