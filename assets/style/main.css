@@ -94,6 +94,8 @@ a{
 a:hover {
   text-decoration: line-through;
   color: rgb(228,85,83);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
   font-weight: 700;
 }
 
