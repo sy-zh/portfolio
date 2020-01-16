@@ -5,6 +5,10 @@ html, body {
   margin: 0;
 }
 
+body{
+  background-image: url(/assets/media/grid3.png);
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 16px;

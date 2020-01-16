@@ -25,3 +25,5 @@ for(let i=0; i<maxHorizontal; i++){
     ctx.lineTo(canvas.width, gap*(i+1));
     ctx.stroke();
 }
+
+// 背景画svg方格让它在css里自动排列

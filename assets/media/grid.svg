@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .\32 697f1fa-7cb3-49bd-9c8e-0efa03ac74de {
+        fill: none;
+        stroke: #6ca6a6;
+        stroke-miterlimit: 10;
+        stroke-width: 0.5px;
+      }
+    </style>
+  </defs>
+  <title>资源 1</title>
+  <g id="06aaf819-7b6b-42cc-84f1-46a07a9c6fea" data-name="图层 2">
+    <g id="c862179b-3da0-4dbd-ace2-ca6f0b97c8ec" data-name="图层 1">
+      <line class="2697f1fa-7cb3-49bd-9c8e-0efa03ac74de" y1="9" x2="18" y2="9"/>
+      <line class="2697f1fa-7cb3-49bd-9c8e-0efa03ac74de" x1="9" x2="9" y2="18"/>
+    </g>
+  </g>
+</svg>
