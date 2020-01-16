@@ -6,7 +6,9 @@ html, body {
 }
 
 body{
-  background-image: url(/assets/media/grid3.png);
+  background-image: url(/assets/media/grid.svg);
+  background-repeat: initial;
+  background-size: 18px;
 }
 
 /* width */
