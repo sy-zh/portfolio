@@ -1,0 +1,33 @@
+.textContainer{
+    display: grid;
+    overflow: auto;
+    /* border: 1px solid black; */
+    height: 60%;
+    width: 100%;
+    position: fixed;
+    bottom: 30px;
+}
+
+#name{
+    font-size: 1em;
+    text-align: center;
+    line-height: 200%;
+    text-shadow:none;
+}
+
+#name span{
+    color: black;
+    background-color: white;
+}
+
+p{
+    padding:10%;
+}
+
+p span{
+    background-color: white;
+}
+
+#back{
+    color: rgb(108,166,166); 
+}
