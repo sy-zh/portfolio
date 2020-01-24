@@ -1,13 +1,3 @@
-.textContainer{
-    display: grid;
-    overflow: auto;
-    /* border: 1px solid black; */
-    height: 60%;
-    width: 100%;
-    position: fixed;
-    bottom: 30px;
-}
-
 #name{
     font-size: 1em;
     text-align: center;
@@ -22,6 +12,7 @@
 
 p{
     padding:10%;
+    font-size: 0.5em;
 }
 
 p span{
@@ -30,4 +21,8 @@ p span{
 
 #back{
     color: rgb(108,166,166); 
+}
+
+a:hover {
+    text-decoration: none;
 }
