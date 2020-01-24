@@ -8,11 +8,13 @@
 #name span{
     color: black;
     background-color: white;
+    font-weight: 700;
 }
 
 p{
     padding:10%;
-    font-size: 0.5em;
+    font-size: 0.8em;
+    font-weight: 500;
 }
 
 p span{
