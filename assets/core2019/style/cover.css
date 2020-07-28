@@ -1,0 +1,77 @@
+body { 
+    background: url(/assets/img/astronaut-earth.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: background-image 0.6s ease-in-out;
+}
+
+h1{
+    font-family: 'Fugaz One', cursive;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.8);
+}
+
+.coverText{
+    position: fixed;
+    bottom: 3%;
+    left: 10%;
+    right: 30%;  
+    font-size: 2.5vw;
+    line-height: 2.6em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    color:rgba(255, 255, 255, 0.8);
+    transition: width 0.5s ease-in-out;
+}
+
+#text:hover{
+    color:white;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.buttonLeft{
+    position: fixed;
+    left: 3%;
+    bottom: 50%;
+}
+
+.buttonRight{
+    position: fixed;
+    right: 3%;
+    bottom: 50%;
+}
+
+button:hover{
+    color:white;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    cursor: pointer;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+

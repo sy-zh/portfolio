@@ -1,0 +1,95 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.nav{
+    color:rgba(255, 255, 255, 0.8);
+    text-shadow: none;
+    font-size:24px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.nav:hover{
+    color:white;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    cursor: default;
+}
+
+.sidenav {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-color:white;
+    overflow-y: hidden;
+    transition: 0.5s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.catalog {
+    overflow-y: scroll;
+    height: 80%;
+    margin: 32px 12px 32px 32px;
+    padding-right: 20px;
+}
+
+.sidenav a {
+    padding: 8px 3px 8px 3px;
+    line-height: 1.2;
+    font-size: 0.8em;
+    text-decoration: none;
+    color:black;
+    display: block;
+    border-bottom: 1px solid black;
+    transition: 0.3s;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+  
+.sidenav a:hover {
+    font-weight: 700;
+    overflow-y: visible;
+    white-space: normal;
+}
+
+.sidenav .magezineName {
+    padding: 40px 32px 0px 32px;
+    color:black;
+    transition: 0.3s;
+    font-size: 1em;
+    border: none;
+}
+.sidenav .magezineName:hover{
+    color: rgba(0, 0, 0, 0.5);
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 34px;
+    border: none;
+    margin-right: 8px;
+    height: 50px;
+}
+
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media  only screen and (max-width: 800px) {
+    /* for ipad */
+}
+
+@media only screen and (max-width: 480px) {
+    /* for iphone */
+}
