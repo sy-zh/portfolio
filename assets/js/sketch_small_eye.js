@@ -65,15 +65,15 @@ function eye(x, y, d) {
     x = x + cos(angle) * r;
     y = y + sin(angle) * r;
 
-    if (
-        mouseX >= x &&
-        mouseX <= x + d/2 &&
-        mouseY >= y &&
-        mouseY <= y + d/2
-      ) {
-        x += random(-3, 3);
-        y += random(-3, 3);
-    }
+    // if (
+    //     mouseX >= x &&
+    //     mouseX <= x + d/2 &&
+    //     mouseY >= y &&
+    //     mouseY <= y + d/2
+    //   ) {
+    //     x += random(-3, 3);
+    //     y += random(-3, 3);
+    // }
 
     push();
     translate(x, y);
